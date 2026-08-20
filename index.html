@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Evolução da Tecnologia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .timeline {
+            position: relative;
+            margin-bottom: 60px;
+        }
+
+        .era-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media(min-width: 768px) {
+            .era-card {
+                flex-direction: row;
+            }
+            .era-card:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+            .era-image, .era-content {
+                width: 50%;
+            }
+        }
+
+        .era-image {
+            position: relative;
+            min-height: 300px;
+        }
+
+        .era-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .era-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .era-date {
+            align-self: flex-start;
+            background: #2a5298;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .era-content h2 {
+            font-size: 1.8rem;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+
+        .era-content p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .era-content ul {
+            list-style-type: square;
+            margin-left: 20px;
+            color: #444;
+        }
+
+        .era-content li {
+            margin-bottom: 5px;
+        }
+
+        .curiosidades {
+            background: #1e3c72;
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .curiosidades h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .grid-curiosidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .curiosidade-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #00d2ff;
+        }
+
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Evolução da Tecnologia</h1>
+        <p>Uma jornada do surgimento da eletricidade até a Inteligência Artificial</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="intro">
+            <h2>O Impacto Tecnológico na Humanidade</h2>
+            <p>A tecnologia não é apenas um conjunto de ferramentas, mas a própria extensão da capacidade humana. Desde a invenção da roda até os algoritmos modernos, cada salto tecnológico transformou profundamente a nossa economia, comunicação, saúde e estilo de vida. Abaixo, exploramos as principais eras dessa evolução.</p>
+        </section>
+
+        <main class="timeline">
+
+            <article class="era-card">
+                <div class="era-image">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Revolução Industrial e Máquinas">
+                </div>
+                <div class="era-content">
+                    <span class="era-date">Séculos XVIII - XIX</span>
+                    <h2>A Revolução Industrial</h2>
+                    <p>O início da automação e da produção em massa. A substituição do trabalho artesanal pelas máquinas a vapor transformou o mundo agrícola em urbano.</p>
+                    <ul>
+                        <li><strong>Invenção do Motor a Vapor:</strong> Impulsionou fábricas e locomotivas.</li>
+                        <li><strong>O Telégrafo:</strong> A primeira forma de comunicação quase instantânea à distância.</li>
+                        <li><strong>Eletricidade:</strong> O surgimento da lâmpada e das redes elétricas no fim do século XIX mudou a noite para sempre.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="era-card">
+                <div class="era-image">
+                    <img src="https://images.unsplash.com/photo-1601524909162-be87252be298?auto=format&fit=crop&w=600&q=80" alt="Computadores Antigos e Válvulas">
+                </div>
+                <div class="era-content">
+                    <span class="era-date">Meados do Século XX</span>
+                    <h2>A Era dos Computadores (Mainframes)</h2>
+                    <p>Com a Segunda Guerra Mundial e o pós-guerra, surgiu a necessidade de processar dados em altíssima velocidade. Nasciam os primeiros computadores, que ocupavam salas inteiras.</p>
+                    <ul>
+                        <li><strong>ENIAC (1946):</strong> O primeiro computador digital eletrônico de grande escala.</li>
+                        <li><strong>O Transistor (1947):</strong> A invenção que substituiu as válvulas e permitiu a miniaturização dos eletrônicos.</li>
+                        <li><strong>Corrida Espacial:</strong> A tecnologia de computação levou o homem à Lua em 1969.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="era-card">
+                <div class="era-image">
+                    <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=600&q=80" alt="Computador Pessoal e Internet Antiga">
+                </div>
+                <div class="era-content">
+                    <span class="era-date">Anos 1970 - 1990</span>
+                    <h2>A Computação Pessoal e a Internet</h2>
+                    <p>Os computadores deixaram de ser exclusividade de governos e grandes empresas e entraram nas casas das pessoas. Logo em seguida, a World Wide Web (WWW) conectou o planeta.</p>
+                    <ul>
+                        <li><strong>Apple e Microsoft:</strong> Popularização dos PCs com interfaces gráficas e mouses.</li>
+                        <li><strong>Arpanet para a WWW:</strong> A evolução da rede militar/acadêmica para a internet pública nos anos 90.</li>
+                        <li><strong>Armazenamento:</strong> A transição dos disquetes para os CDs e os primeiros pendrives.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="era-card">
+                <div class="era-image">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Smartphones e Mobilidade">
+                </div>
+                <div class="era-content">
+                    <span class="era-date">Anos 2000 - 2015</span>
+                    <h2>A Era Mobile e as Redes Sociais</h2>
+                    <p>A internet saiu das mesas e foi para o bolso das pessoas. O lançamento do iPhone em 2007 redefiniu o conceito de telefone celular.</p>
+                    <ul>
+                        <li><strong>Smartphones:</strong> Dispositivos multiuso com GPS, câmera de alta resolução e internet móvel (3G/4G).</li>
+                        <li><strong>Economia dos Aplicativos:</strong> Surgimento do Uber, WhatsApp, Instagram e o streaming (Netflix, Spotify).</li>
+                        <li><strong>Computação em Nuvem:</strong> Dados guardados em servidores remotos, permitindo acesso de qualquer lugar.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="era-card">
+                <div class="era-image"><!DOCTYPE html>
+                    <html lang="pt-BR">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Evolução da Tecnologia em 2026</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                background: #f4f4f4;
+                                margin: 0;
+                                padding: 20px;
+                            }
+                    
+                            .container {
+                                max-width: 800px;
+                                margin: auto;
+                                background: white;
+                                padding: 20px;
+                                border-radius: 10px;
+                                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                            }
+                    
+                            h1 {
+                                color: #0077cc;
+                                text-align: center;
+                            }
+                    
+                            h2 {
+                                color: #333;
+                            }
+                    
+                            p {
+                                line-height: 1.6;
+                            }
+                    
+                            ul {
+                                line-height: 1.8;
+                            }
+                    
+                            footer {
+                                text-align: center;
+                                margin-top: 20px;
+                                color: gray;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                    
+                    <div class="container">
+                        <h1>Evolução da Tecnologia em 2026</h1>
+                    
+                        <p>
+                            Em 2026, a tecnologia continua evoluindo rapidamente, impulsionada pela
+                            Inteligência Artificial, computação em nuvem, robótica e redes 5G/6G.
+                            Empresas e pessoas utilizam essas inovações para aumentar a produtividade
+                            e melhorar a comunicação. :contentReference[oaicite:0]{index=0}
+                        </p>
+                    
+                        <h2>Principais Avanços</h2>
+                    
+                        <ul>
+                            <li>🤖 Inteligência Artificial mais integrada ao trabalho.</li>
+                            <li>☁️ Expansão da computação em nuvem.</li>
+                            <li>🔒 Maior foco em segurança digital.</li>
+                            <li>📱 Aplicativos mais inteligentes e personalizados.</li>
+                            <li>🚗 Avanços em carros autônomos e robótica.</li>
+                        </ul>
+                    
+                        <h2>Conclusão</h2>
+                    
+                        <p>
+                            A evolução tecnológica em 2026 transforma a forma como estudamos,
+                            trabalhamos e nos comunicamos. O uso responsável da tecnologia e da IA
+                            torna-se cada vez mais importante. :contentReference[oaicite:1]{index=1}
+                        </p>
+                    
+                        <footer>
+                            © 2026 - Projeto Tecnologia
+                        </footer>
+                    </div>
+                    
+                    </body>
+                    </html>
